@@ -280,7 +280,7 @@
       <option value="0" selected disabled>إختر العرض الذي يناسب طول شعرك</option>
       <option value="1">عبوة واحدة للشعر القصير 449 درهم</option>
       <option value="2">2 عبوات للشعر المتوسط 649 درهم</option>
-      <option value="3">3 عبوات للشعر الطويل 849 درهم</option>
+      <option value="3">3عبوات للشعر الطويل 849 درهم</option>
     </select>
     <div id="chevrons">
       <i class="fas fa-chevron-up"></i>
