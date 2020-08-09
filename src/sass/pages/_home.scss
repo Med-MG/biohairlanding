@@ -41,12 +41,14 @@
         }
     }
 
-    &--result{
+    &--result {
         margin: 20rem 0 5rem 0;
-        @include responsive(tab-land){
+
+        @include responsive(tab-land) {
             margin: 30rem 0 5rem 0;
         }
-        @include responsive(phone){
+
+        @include responsive(phone) {
             margin: 33rem 0 5rem 0;
         }
     }
@@ -58,9 +60,11 @@
     background: linear-gradient(67deg, rgba(252, 105, 134, 1) 0%, rgba(243, 115, 116, 1) 50%, rgba(233, 122, 94, 1) 100%);
     padding: 5rem 10rem 5rem 0;
     position: relative;
-    @include responsive(tab-land){
-    padding: 5rem 0;
+
+    @include responsive(tab-land) {
+        padding: 5rem 0;
     }
+
     &__text {
         color: $color-white;
         width: 30%;
@@ -78,9 +82,10 @@
             text-align: center;
             margin-bottom: 13rem;
         }
-         @include responsive(phone){
+
+        @include responsive(phone) {
             width: 90%;
-         }
+        }
     }
 
     &__title {
@@ -128,40 +133,44 @@
 
 }
 
-.section-slider{
+.section-slider {
     margin: 5rem 0;
     direction: ltr;
-    &__responsive{
+    overflow: hidden;
+
+    &__responsive {
         margin: 0 auto;
         max-width: 1900px;
         width: 100%;
     }
-    &__container{
+
+    &__container {
         // width: 60rem;
         height: 80rem;
         overflow: hidden;
         position: relative;
 
-        @include responsive(tab-port){
+        @include responsive(tab-port) {
             height: 50rem;
         }
-        @include responsive(phone){
+
+        @include responsive(phone) {
             height: 35rem;
         }
 
-        &::after{
+        &::after {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(0deg, rgba(2,0,36,0.8239496482186625) 0%, rgba(255,255,255,0) 100%);  
+            background: linear-gradient(0deg, rgba(2, 0, 36, 0.8239496482186625) 0%, rgba(255, 255, 255, 0) 100%);
             z-index: 555;
         }
     }
-    
-    &__img{
+
+    &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -169,22 +178,172 @@
 
     }
 
-    
+
 }
 
 .benefits {
     background-color: #F7F1F1;
     padding: 5rem 2rem;
-    &__container{
+
+    @include responsive(phone) {
+        padding: 5rem 0rem;
+    }
+
+    &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 5rem;
+
+        @include responsive(tab-port) {
+            grid-template-columns: 1fr;
+
+        }
     }
-    &__product-img{
-        @extend  .product-img;
+
+    &__product-img {
+        @extend .product-img;
+
+        @include responsive(tab-port) {
+            order: 2;
+        }
     }
-    &__list{}
-    &__item{
-        &--icon{}
-        &--text{}
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-self: center;
+        position: relative;
+        border-right: 2px solid $light-orange;
+
+        @include responsive(tab-port) {
+            border-right: none;
+            border-bottom: 2px solid $light-orange;
+            margin-bottom: 6rem;
+            padding: 2rem 0;
+        }
     }
+
+    &__item {
+        display: flex;
+        padding: 2rem 4rem 2rem 0;
+        justify-content: center;
+
+        &--icon {
+            margin-left: 1rem;
+            height: 5rem;
+        }
+
+        &--text {
+            @extend .description-text;
+            margin: 0;
+        }
+    }
+
+    &__saperator {
+        position: absolute;
+        width: 5rem;
+        transform: translate(103%, -50%) rotateY(180deg);
+        top: 50%;
+
+        @include responsive(tab-port) {
+            transform: translate(-50%, 77%) rotate(90deg) rotateY(180deg);
+            left: 50%;
+            bottom: 0;
+            top: unset;
+        }
+    }
+}
+
+.reviews{
+    direction: ltr;
+    padding: 5rem 2rem;
+    
+    @include responsive(phone) {
+        padding: 5rem 0rem;
+    }
+    &__container{
+        width: max-content;
+        text-align: center;
+        padding: 2rem;
+    }
+    &__img{
+        width: 20rem;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    &__description{
+        @extend .description-text;
+    }
+    &__author{
+        @extend .description-text;
+        color: $light-orange;
+    }
+}
+
+.offer{
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__container{
+        text-align: center;
+        &:nth-child(2){
+            margin: 0 10rem;
+        }
+
+        & > p {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+    &__title{
+        @extend .description-text;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    &__img{
+        width: 40rem;
+    }
+    &__new{
+        color: #5CBE83;
+    }
+    &__original{
+        color: #F51D48;
+        text-decoration: line-through;
+    }
+}
+
+
+.buy-now{
+        //background styling
+        height: 65vh;
+        background-image: linear-gradient(to right bottom,
+                rgba($primary, 0.6),
+                rgba($primary-variant, 0.6)),
+            url(../images/bg1080x.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
+            height: 65vh;
+        }
+    
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+        only screen and (min-width: 125em) {
+            background-image: linear-gradient(to right bottom,
+                    rgba($primary, 0.6),
+                    rgba($primary-variant, 0.6)),
+                url(../images/bg1080x.png);
+        }
+    
+        @include responsive(phone) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+            height: 50vh;
+        }
 }
