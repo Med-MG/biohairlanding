@@ -57,7 +57,7 @@
 .exclusive {
     margin: 5rem 0;
     background: rgb(252, 105, 134);
-    background: linear-gradient(67deg, rgba(252, 105, 134, 1) 0%, rgba(243, 115, 116, 1) 50%, rgba(233, 122, 94, 1) 100%);
+    background: $gold-bg;
     padding: 5rem 10rem 5rem 0;
     position: relative;
 
@@ -66,13 +66,13 @@
     }
 
     &__text {
-        color: $color-white;
+        color: $form-black;
         width: 30%;
 
         &-description {
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin: 4rem 0;
-            font-weight: 300;
+            font-weight: 400;
             line-height: 1.7;
         }
 
@@ -90,13 +90,13 @@
 
     &__title {
         &--sub {
-            font-size: 2rem;
+            font-size: 4rem;
             font-weight: 300;
             display: block;
         }
 
         &--main {
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: 700;
             display: block;
         }
@@ -115,7 +115,7 @@
 
     &__product-img {
         position: absolute;
-        top: 13.5rem;
+        top: 20.5rem;
         left: 14.2rem;
 
         @include custom_media(1478) {
@@ -125,7 +125,7 @@
 
         @include responsive(tab-land) {
             @include abs_centeringX;
-            top: 30.5rem;
+            top: 45rem;
 
         }
 
@@ -451,6 +451,8 @@
             line-height: 68px;
             font-size: 34px;
             text-align: center;
+            color: $color-white;
+            background: $gold-bg;
         }
     }
 

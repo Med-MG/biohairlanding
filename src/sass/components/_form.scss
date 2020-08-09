@@ -14,6 +14,7 @@
 
     @include responsive(phone){
         width: 90%;
+        display: none;
     }
 
     &__heading {
