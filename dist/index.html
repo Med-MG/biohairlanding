@@ -129,16 +129,47 @@
 <section class="section-slider">
 <div class="section-slider__responsive">
   <div class="section-slider__container">
-    <img src="images/AF1.jpg" class="section-slider__img" alt="" srcset="">
+    <img src="images/AF1.jpg" class="section-slider__img" alt="product work perfectly" srcset="">
   </div>
   <div class="section-slider__container">
-    <img src="images/AF2.jpg" class="section-slider__img" alt="" srcset="">
+    <img src="images/AF2.jpg" class="section-slider__img" alt="product work perfectly" srcset="">
   </div>
   <div class="section-slider__container">
-    <img src="images/AF3.jpg" class="section-slider__img" alt="" srcset="">
+    <img src="images/AF3.jpg" class="section-slider__img" alt="product work perfectly" srcset="">
+  </div>
+  <div class="section-slider__container">
+    <img src="images/AF4.jpg" class="section-slider__img" alt="product work perfectly" srcset="">
+  </div>
+  <div class="section-slider__container">
+    <img src="images/AF5.jpg" class="section-slider__img" alt="product work perfectly" srcset="">
   </div>
 </div>
-
+</section>
+<section class="benefits">
+  <h1 class="heading-primary t-center">فوائد الماسك المعجزة؟</h1>
+  <p class="subheading t-center">مجرب و فعال</p>
+  <div class="benefits__container">
+    <img src="images/productx1200.png" class="benefits__product-img" alt="product image" srcset="">
+    <ul class="benefits__list list-unstyled">
+      <li class="benefits__item">
+        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon">
+        <p class="benefits__item--text description-tex">يعالج الشعر التالف و المكسر بسبب مجفف الشعر او المسخن او صباغة الشعر</p>
+      </li>
+      <li class="benefits__item">
+        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon">
+        <p class="benefits__item--text description-tex">يعالج الشعر التالف و المكسر بسبب مجفف الشعر او المسخن او صباغة الشعر</p>
+      </li>
+      <li class="benefits__item">
+        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon">
+        <p class="benefits__item--text description-tex">يعالج الشعر التالف و المكسر بسبب مجفف الشعر او المسخن او صباغة الشعر</p>
+      </li>
+      <li class="benefits__item">
+        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon">
+        <p class="benefits__item--text description-tex">يعالج الشعر التالف و المكسر بسبب مجفف الشعر او المسخن او صباغة الشعر</p>
+      </li>
+      <img src="images/ARRorg.png" alt="" class="benefits__saperator">
+    </ul>
+  </div>
 </section>
 
 <!-- <script src="js/jquery.min.js"></script> -->
@@ -181,9 +212,15 @@
 <script type="text/javascript">
   $(document).ready(function () {
     $('.section-slider__responsive').slick({
+      arrows: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      touchMove: true,
+      swipe: true,
       dots: true,
       infinite: false,
       speed: 300,
+    
     });
   });
 </script>

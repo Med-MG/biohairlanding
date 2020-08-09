@@ -8,11 +8,16 @@ body {
 
 .heading-primary{
     font-size: 4rem;
-    font-weight: 600;
+    font-weight: 700;
     color: $form-black;
     margin-bottom: 1.5rem;
 }
-
+.subheading{
+    font-size: 3rem;
+    font-weight: 300;
+    color: $form-black;
+    line-height: 1.7;
+}
 .description-text{
     font-size: 2rem;
     margin: 4rem 0;

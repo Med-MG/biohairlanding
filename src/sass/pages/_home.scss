@@ -171,3 +171,20 @@
 
     
 }
+
+.benefits {
+    background-color: #F7F1F1;
+    padding: 5rem 2rem;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__product-img{
+        @extend  .product-img;
+    }
+    &__list{}
+    &__item{
+        &--icon{}
+        &--text{}
+    }
+}
