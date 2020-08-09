@@ -255,95 +255,239 @@
     }
 }
 
-.reviews{
+.reviews {
     direction: ltr;
     padding: 5rem 2rem;
-    
+    overflow: hidden;
     @include responsive(phone) {
         padding: 5rem 0rem;
     }
-    &__container{
+
+    &__container {
         width: max-content;
         text-align: center;
         padding: 2rem;
     }
-    &__img{
+
+    &__img {
         width: 20rem;
         margin: 0 auto;
         border-radius: 5px;
     }
-    &__description{
+
+    &__description {
         @extend .description-text;
     }
-    &__author{
+
+    &__author {
         @extend .description-text;
         color: $light-orange;
     }
 }
 
-.offer{
+.offer {
     padding: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    &__container{
+
+    &__container {
         text-align: center;
-        &:nth-child(2){
+
+        &:nth-child(2) {
             margin: 0 10rem;
         }
 
-        & > p {
+        &>p {
             font-size: 3rem;
             font-weight: 500;
         }
     }
-    &__title{
+
+    &__title {
         @extend .description-text;
         font-size: 3rem;
         font-weight: 500;
     }
-    &__img{
+
+    &__img {
         width: 40rem;
     }
-    &__new{
+
+    &__new {
         color: #5CBE83;
     }
-    &__original{
+
+    &__original {
         color: #F51D48;
         text-decoration: line-through;
     }
 }
 
 
-.buy-now{
-        //background styling
-        height: 65vh;
+.buy-now {
+    //background styling
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+            rgba($primary, 0.6),
+            rgba($primary-variant, 0.6)),
+        url(../images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
+        height: 95vh;
+    }
+
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
         background-image: linear-gradient(to right bottom,
                 rgba($primary, 0.6),
                 rgba($primary-variant, 0.6)),
-            url(../images/bg1080x.png);
-        background-size: cover;
-        background-position: top;
+            url(../images/bg2.jpg);
+    }
+
+    @include responsive(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40vh);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40vh);
+        height: 50vh;
+    }
+
+    &__form {
         position: relative;
-    
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70vh);
-            height: 65vh;
+        top: -37rem;
+        width: 34%;
+
+        @include custom_media(1332) {
+            width: 75%;
         }
-    
-        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-        only screen and (min-width: 125em) {
-            background-image: linear-gradient(to right bottom,
-                    rgba($primary, 0.6),
-                    rgba($primary-variant, 0.6)),
-                url(../images/bg1080x.png);
+
+        @include responsive(tab-port) {
+            width: 65%;
         }
-    
+
         @include responsive(phone) {
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-            height: 50vh;
+            width: 90%;
+            top: -17rem;
         }
+    }
+
+    &__title {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        color: white;
+        text-align: center;
+
+        @include responsive(tab-port) {
+            width: 100%;
+            text-align: center;
+            left: 50%;
+            right: unset;
+            top: 25%;
+            transform: translateX(-50%);
+        }
+
+        &-main {
+            font-size: 5rem;
+            font-weight: 700;
+            color: white;
+
+            &--first {
+                display: block;
+            }
+
+            &--second {
+                display: block;
+            }
+        }
+
+        &-sub {
+            font-weight: 300;
+            font-size: 2.8rem;
+            line-height: 4;
+
+        }
+    }
+}
+
+.section-service {
+    padding: 3rem 0;
+    margin-top: -30rem;
+    
+    @include responsive(phone){
+        margin-top: -10rem;
+    }
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        @include responsive(phone){
+            flex-direction: column;
+        }
+    }
+    &__item{
+        text-align: center;
+        height: max-content;
+         .icon {
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: block;
+            height: 68px;
+            width: 68px;
+            line-height: 68px;
+            font-size: 34px;
+            text-align: center;
+        }
+    }
+
+}
+
+.footer{
+    padding: 10rem 0 5rem 0;
+    text-align: center;
+    background-color: $light-blue;
+    &__links{
+        margin: 0 auto;
+        width: 60rem;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: .2px solid #707070;
+    }
+    &__link{
+        &,
+        &:link,
+        &:visited{
+            text-decoration: none;
+            @extend .description-text;
+            color: #051441;
+            
+        }
+
+    }
+    &__right{
+        @extend .description-text;
+        margin: 2rem auto;
+    }
+    &__designer{
+        @extend .description-text;
+        font-weight: 600;
+        margin: 0rem auto;
+        & > a {
+            color: $secondary;
+        }
+    }
 }

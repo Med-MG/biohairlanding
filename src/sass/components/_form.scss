@@ -40,11 +40,13 @@
         #chevrons {
             position: absolute;
             top: 1.3rem;
-            left: 2rem;
+            left: 5rem;
             bottom: 0;
             width: 12px;
             padding: 9px 14px;
-
+            @include responsive(phone){
+                left: 2rem;
+            }
             &>i {
                 display: block;
                 height: 30%;
