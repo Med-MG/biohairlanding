@@ -1,45 +1,52 @@
+<!-- <script src="js/jquery.min.js"></script> -->
+<script src="https://kit.fontawesome.com/ecadb3d96a.js" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
-    
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- build:js js/main.min.js -->
 
-    <script src="https://kit.fontawesome.com/ecadb3d96a.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<!-- endbuild -->
+
+<!-- onscroll animation library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
 
-
-    <!-- build:js js/main.min.js -->
-  
-    <script src="js/index.js"></script>
-    <!-- endbuild -->
-    <script src="js/owl-carousel/owl.carousel.min.js"></script>
-    <!-- onscroll animation library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init(
-          {
-            // Global settings:
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            initClassName: 'aos-init', // class applied after initialization
-            animatedClassName: 'aos-animate', // class applied on animation
-            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-            
-
-            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 100, // values from 0 to 3000, with step 50ms
-            duration: 500, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-          }
-        );
-      </script>
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 100, // values from 0 to 3000, with step 50ms
+    duration: 500, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+</script>
+<!-- custom js -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.section-slider__responsive').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+    });
+  });
+</script>
 </body>
+
 </html>
