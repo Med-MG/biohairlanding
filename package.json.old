@@ -2,7 +2,7 @@
   "name": "bio-hair-landing",
   "version": "1.0.0",
   "description": "landing page for a cosmetic product",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/Med-MG/biohairlanding.git"
   },
-  "author": "Med mouiguina",
+  "author": "Mohamed Mouiguina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Med-MG/biohairlanding/issues"
+    "url": "https://github.com/Med-MG/biohairlanding.git/issues"
   },
-  "homepage": "https://github.com/Med-MG/biohairlanding#readme",
+  "homepage": "https://github.com/Med-MG/biohairlanding.git#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",

@@ -2,22 +2,41 @@
 $color-white: #fff;
 $color-black: #000;
 $color-lighter-black: #051441;
-$primary: #10266b;
-$primary-variant: #677294;
-$secondary: #4B53D8;
-$secondary-variant:#32C2EC;
-$tertiary: #0054f9;
-$tertiary-variant: #0000FF;
+//header gradiant
+
+$primary: #BD3F32;
+$primary-variant: #CB356B;
+
+//button color
+$secondary: #32C2EC;
+
+//other
+$light-pink: #F47276;
+$light-orange: #DD6202;
+
+//footer color
+$light-blue: #EFF2F9;
+
+//border color
+$border-gray: #707070;
+//shadow color
+$shadow-color: #6754E2;
+
+//subtl black
+$form-black: #051441;
+
+$color-primary: #55c57a;
+$color-secondary-dark: #ff7730;
+
 $opacity:#F4F5F8;
 $background:#F5F4FF;
 $error:Red;
 $color-orchid: #2d3436;
-$footer:#EFF2F9;
-$shadow-color: #ded9ff;
+
+
 $color-text-dark: #3c4858;
 $light-gray: #E9ECF3;
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+
 
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
@@ -27,15 +46,8 @@ $color-grey-dark: #777;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
-$events-color-1: #D8F6E4;
-$events-color-2: #CFDEFF;
-$events-color-3: #FFF4D7;
-$events-color-4: #FDD6D9;
-$events-color-5: #FFE4DB;
-
-$learning-center-yellow: #E9C925;
-$learning-center-pink: #EC325E;
 //ANIMATIONS stuff
+$form-shadow: 0 1rem 4rem 0 rgba($shadow-color, .22);
 $hover: all 0.2s ease-in;
 $slide: all 0.3s cubic-bezier(.55,0,.1,1);
 $slide-delay: all 0.4s 0.1s  cubic-bezier(.55,0,.1,1);

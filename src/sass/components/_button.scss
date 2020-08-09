@@ -1,162 +1,4 @@
-@media (min-width: 1200px) {
-    .getStarted {
-        &__btn {
-            border: none;
-            border-radius: 8px;
-            background-color: $secondary;
-            color: $color-white;
-            padding: 24px 144px;
-            font-size: 24px;
-            font-weight: 500;
-            box-shadow: $default-shadow;
-            margin-bottom: 80px;
-            cursor: pointer;
-        }
-    }
 
-    .form {
-        &__btnSend {
-            margin-top: 24px;
-            margin-bottom: 32px;
-            width: 100%;
-            border: none;
-            padding: 16px;
-            background-color: $secondary;
-            color: $color-white;
-            font-weight: 600;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    }
-.webinarPage__button{
-    border-radius: 8px;
-    display: block;
-    margin-top: 24px;
-    margin-bottom: 56px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12%;
-    border: none;
-    padding: 16px;
-    background-color: #0054F9;
-    color: $color-white;
-    box-shadow: $default-shadow;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-}
-    }
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .getStarted {
-        &__btn {
-            border-radius: 8px;
-            display: block;
-            padding: 24px 120px;
-            margin-top: 24px;
-            margin-bottom: 56px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 72%;
-            border: none;
-            padding: 16px;
-            background-color: $secondary;
-            color: $color-white;
-            box-shadow: $default-shadow;
-            font-weight: 500;
-            font-size: 24px;
-            cursor: pointer;
-        }
-    }
-
-    .form {
-        &__btnSend {
-            margin-bottom: 32px;
-            width: 100%;
-            border: none;
-            padding: 16px;
-            background-color: $secondary;
-            color: $color-white;
-            font-weight: 600;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    }
-
-    .webinarPage__button{
-        border-radius: 8px;
-        display: block;
-        margin-top: 24px;
-        margin-bottom: 56px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 56%;
-        border: none;
-        padding: 16px;
-        background-color: #0054F9;
-        color: $color-white;
-        box-shadow: $default-shadow;
-        font-weight: 700;
-        font-size: 16px;
-        cursor: pointer;
-    }
-}
-
-@media (min-width: 600px)and (max-width: 1024px) {
-    .getStarted {
-        &__btn {
-            border-radius: 8px;
-            display: block;
-            padding: 24px 120px;
-            margin-top: 24px;
-            margin-bottom: 56px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-            border: none;
-            padding: 16px;
-            background-color: $secondary;
-            color: $color-white;
-            box-shadow: $default-shadow;
-            font-weight: 500;
-            font-size: 24px;
-            cursor: pointer;
-        }
-    }
-
-    .form {
-        &__btnSend {
-            margin-top: 24px;
-            margin-bottom: 32px;
-            width: 100%;
-            border: none;
-            padding: 16px;
-            background-color: $secondary;
-            color: $color-white;
-            font-weight: 600;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    }
-
-    .webinarPage__button{
-        border-radius: 8px;
-        display: block;
-        margin-top: 24px;
-        margin-bottom: 56px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 24%;
-        border: none;
-        padding: 16px;
-        background-color: #0054F9;
-        color: $color-white;
-        box-shadow: $default-shadow;
-        font-weight: 700;
-        font-size: 16px;
-        cursor: pointer;
-    }
-}
 
 .btn {
 
@@ -165,12 +7,11 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 1rem;
         transition: all .2s;
         position: relative;
-        font-size: 2.6rem;
+        font-size: 2.2rem;
 
         //Change for the <button> element
         border: none;
@@ -183,10 +24,6 @@
         // }
     }
 
-    &__arrow-tip {
-        width: 1.3rem;
-        margin-left: 2rem;
-    }
 
     &:hover {
         transform: translateY(-3px);
@@ -206,31 +43,17 @@
     }
 
     &--blue {
-        background-color: $secondary-variant;
+        display: block;
+        background-color: $secondary;
         color: $color-white;
-       
+        margin: 0 auto;
+        padding: 1.4rem 7rem;
         &::after {
-            background-color: $secondary-variant;
+            background-color: $secondary;
         }
     }
 
-    &--header {
-        @include responsive(small-desktop) {
-            margin: 4rem auto;
-            display: block !important;
-            width: 35rem;
-        }
 
-    }
-
-    &--tertiary {
-        background-color: $tertiary;
-        color: $color-white;
-       
-        &::after {
-            background-color: $tertiary;
-        }
-    }
 
 
     &::after {
@@ -246,24 +69,6 @@
         transition: all .4s;
     }
 
-    &__leaning-center{
-        background-color: $tertiary;
-        font-size: 2rem !important;
-        margin: 2rem 0;
-    }
-
-    &__programm{
-        background-color: $tertiary-variant;
-        color: $color-white;
-        // padding: 2.5rem 4rem !important;
-        height: max-content;
-        margin: 0 auto;
-       
-       
-        &::after {
-            background-color: $tertiary-variant;
-        }
-    }
 }
 
 
@@ -305,35 +110,5 @@
             color: $primary !important;
         }
 
-    }
-}
-
-.btn-subscribe {
-
-    &,
-    &:link,
-    &:visited {
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 1.2rem 0 0 0;
-        display: inline-block;
-        border-radius: 1rem;
-        transition: all .2s;
-        position: relative;
-        left: -2.5rem;
-        font-size: 1.6rem;
-        @include responsive(tab-port){
-            top: -1px;
-        }
-
-
-        //Change for the <button> element
-        border: none;
-        cursor: pointer;
-        background-color: $secondary-variant;
-        color: white;
-        height: 5rem;
-        width: 13rem;
-        text-align: center;
     }
 }

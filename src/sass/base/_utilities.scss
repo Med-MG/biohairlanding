@@ -1,6 +1,3 @@
-.secondary-variant {
-    color: $secondary-variant;
-}
 
 .u-center-text {
     text-align: center !important;
@@ -8,6 +5,9 @@
 
 //margin bottom utilities
 .u-mb-s {
+    margin-bottom: 1.5rem !important;
+}
+.u-mb-2 {
     margin-bottom: 1.5rem !important;
 }
 
@@ -82,57 +82,6 @@ a {
     }
 }
 
-.header__page-alt {
-    background-image: url(../images/bg-heroPages1.png);
-    position: relative;
-    background-size: cover;
-    background-repeat: round;
-    height: 55vh;
-
-    @include responsive(phone) {
-        height: 40vh;
-    }
-
-    @include responsive(phone-1) {
-        height: 35vh;
-    }
-
-    text-align: center;
-
-    &__title {
-        font-size: 5rem;
-        font-weight: 600;
-        padding: 8rem;
-        color: $primary;
-        text-align: center;
-        color: #10266b;
-        padding: 4rem;
-        @include responsive(tab-port){
-            padding: 3rem;
-        }
-        @include responsive(phone){
-            padding: 2rem;
-        }
-    }
-}
-
-.event-bg-green {
-    background-color: $events-color-1;
-}
-
-.event-bg-blue {
-    background-color: $events-color-2;
-}
-
-.event-bg-yellow {
-    background-color: $events-color-3;
-}
-.event-bg-pink {
-    background-color: $events-color-4;
-}
-.event-bg-orange {
-    background-color: $events-color-5;
-}
 
 .position-object-right{
     object-position: right;

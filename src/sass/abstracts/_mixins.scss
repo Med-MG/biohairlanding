@@ -39,6 +39,14 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin abs_centeringX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
 @mixin learnig-center_sizing {
     @include custom_media(1580){
         padding: 0 10rem;
