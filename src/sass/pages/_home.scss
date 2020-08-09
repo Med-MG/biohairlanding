@@ -1,0 +1,39 @@
+.form-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    top: -40rem;
+
+    @include responsive(tab-port) {
+        grid-template-columns: 1fr;
+
+    }
+
+    @include responsive(phone){
+        top: -21rem;
+    }
+
+    .product-img {
+        width: 60rem;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+.encouragement{
+    text-align: center;
+    margin-top: -30rem;
+    @include custom_media(556){
+        margin-top: -10rem;
+    }
+    &__container{
+        width: 50%;
+        margin: 0 auto;
+        @include responsive(tab-port){
+            width: 70%;
+        }
+        @include responsive(phone){
+            width: 80%;
+        }
+    }
+}
