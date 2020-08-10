@@ -28,6 +28,7 @@
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(.25);
 		transition: all .5s .2s;
+		z-index: -2;
 	}
 
 
@@ -79,7 +80,8 @@
     .show-content{
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
-        transition: all .5s ;
+		transition: all .5s ;
+		z-index: 2;
     }
 	// &:target {
 	// 	opacity: 1;
