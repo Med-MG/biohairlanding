@@ -214,11 +214,11 @@
         align-items: start;
         align-self: center;
         position: relative;
-        border-right: 2px solid $light-orange;
+        border-right: 2px solid $goldy;
 
         @include responsive(tab-port) {
             border-right: none;
-            border-bottom: 2px solid $light-orange;
+            border-bottom: 2px solid $goldy;
             margin-bottom: 6rem;
             padding: 2rem 0;
         }

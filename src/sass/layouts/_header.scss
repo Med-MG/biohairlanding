@@ -2,8 +2,8 @@
     //background styling
     height: 85vh;
     background-image: linear-gradient(to right bottom,
-            rgba($primary, 0.6),
-            rgba($primary-variant, 0.6)),
+            rgba($color-white, 0.2),
+            rgba($form-black, 0.8)),
         url(../images/bg1080x-min.png);
     background-size: cover;
     background-position: top;
@@ -19,8 +19,8 @@
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
         background-image: linear-gradient(to right bottom,
-                rgba($primary, 0.6),
-                rgba($primary-variant, 0.6)),
+                rgba($color-white, 0.2),
+                rgba($form-black, 0.8)),
             url(../images/bg1080x.png);
     }
 
