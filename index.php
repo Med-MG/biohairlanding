@@ -1,3 +1,4 @@
+<?php require_once "functions.php";?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,9 +27,9 @@
     <!-- onscroll animation library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- usefull utility classes -->
-    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="dist/css/util.css">
     <!-- our own css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
 
     <title>Bio hair</title>  
   </head>
@@ -50,7 +51,7 @@
 </header>
 
 <section class="form-section">
-  <img src="images/productx1200.png" class="product-img" alt="product image" srcset="" />
+  <img src="dist/images/productx1200.png" class="product-img" alt="product image" srcset="" />
   <form action="#" class="form display-none">
     <div class="u-mb-2">
       <h2 class="form__heading">
@@ -121,8 +122,8 @@
       ويمكن استعماله كثير من المرات
     </p>
   </div>
-  <img src="images/arrow.png" class="exclusive__arrow-icon" alt="arrow icon" />
-  <img src="images/productx1200.png" class="exclusive__product-img product-img-size" alt="product image" srcset="" />
+  <img src="dist/images/arrow.png" class="exclusive__arrow-icon" alt="arrow icon" />
+  <img src="dist/images/productx1200.png" class="exclusive__product-img product-img-size" alt="product image" srcset="" />
 </section>
 
 <section class="encouragement encouragement--result">
@@ -139,19 +140,19 @@
 <section class="section-slider">
   <div class="section-slider__responsive">
     <div class="section-slider__container">
-      <img src="images/AF1.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
+      <img src="dist/images/AF1.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
     </div>
     <div class="section-slider__container">
-      <img src="images/AF2.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
+      <img src="dist/images/AF2.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
     </div>
     <div class="section-slider__container">
-      <img src="images/AF3.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
+      <img src="dist/images/AF3.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
     </div>
     <div class="section-slider__container">
-      <img src="images/AF4.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
+      <img src="dist/images/AF4.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
     </div>
     <div class="section-slider__container">
-      <img src="images/AF5.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
+      <img src="dist/images/AF5.jpg" class="section-slider__img" alt="product work perfectly" srcset="" />
     </div>
   </div>
 </section>
@@ -160,33 +161,33 @@
   <h1 class="heading-primary t-center">فوائد الماسك المعجزة؟</h1>
   <p class="subheading t-center">مجرب و فعال</p>
   <div class="benefits__container">
-    <img src="images/productx1200.png" class="benefits__product-img" alt="product image" srcset="" />
+    <img src="dist/images/productx1200.png" class="benefits__product-img" alt="product image" srcset="" />
     <ul class="benefits__list list-unstyled">
       <li class="benefits__item">
-        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
+        <img src="dist/images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
         <p class="benefits__item--text">
           يعالج الشعر التالف و المكسر بسبب مجفف الشعر او المسخن او صباغة الشعر
         </p>
       </li>
       <li class="benefits__item">
-        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
+        <img src="dist/images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
         <p class="benefits__item--text">
           يحافظ على لون الصبغة ويعطي لمعان للشعر تحسد عليه
         </p>
       </li>
       <li class="benefits__item">
-        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
+        <img src="dist/images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
         <p class="benefits__item--text">
           يعطي حجم للشعر و يرطبه و يعيد له حيويته
         </p>
       </li>
       <li class="benefits__item">
-        <img src="images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
+        <img src="dist/images/benefits-icon.png" alt="benefits icon" class="benefits__item--icon" />
         <p class="benefits__item--text">
           ينشط النهايات المنقسمة ويقوي بصيلات الشعر
         </p>
       </li>
-      <img src="images/ARRorg.png" alt="" class="benefits__saperator" />
+      <img src="dist/images/ARRorg.png" alt="" class="benefits__saperator" />
     </ul>
   </div>
 </section>
@@ -196,28 +197,28 @@
   <p class="subheading t-center">الشهادات</p>
   <div class="reviews__responsive u-mt-b">
     <div class="reviews__container">
-      <img src="images/review1.jpg" alt="review image" class="reviews__img" />
+      <img src="dist/images/review1.jpg" alt="review image" class="reviews__img" />
       <p class="reviews__description">
         ماسك رائع، مشكوريين!! يعطي ليونة و لا مثيل للشعر و الرائحة جد جميلة
       </p>
       <p class="reviews__author">محمد س</p>
     </div>
     <div class="reviews__container">
-      <img src="images/review2.jpg" alt="review image" class="reviews__img" />
+      <img src="dist/images/review2.jpg" alt="review image" class="reviews__img" />
       <p class="reviews__description">
         اشتريته لابنتي وكانت النتائج مذهلة! سأشتري واحد أخر لابنتي الثانية
       </p>
       <p class="reviews__author">مريم ب</p>
     </div>
     <div class="reviews__container">
-      <img src="images/review3.jpg" alt="review image" class="reviews__img" />
+      <img src="dist/images/review3.jpg" alt="review image" class="reviews__img" />
       <p class="reviews__description">
         مفعوله يلاحظ من الاستعمال الاول و رائحته جد جميلة
       </p>
       <p class="reviews__author">سناء ع</p>
     </div>
     <div class="reviews__container">
-      <img src="images/review4.jpg" alt="review image" class="reviews__img" />
+      <img src="dist/images/review4.jpg" alt="review image" class="reviews__img" />
       <p class="reviews__description">
         لم أكن أتوقع أنه سيعمل عندما رأيت الإعلان ، واشتريت واحد على أي حال ، وقد جربته اليوم. لقد جعل شعري أكثر ليونة و لمعان جميل، شكرا لكم
       </p>
@@ -229,19 +230,19 @@
 <section class="offer">
   <div class="offer__container">
     <h2 class="offer__title">الشعر القصير</h2>
-    <img src="images/productx1200.png" alt="" class="offer__img" srcset="" />
+    <img src="dist/images/productx1200.png" alt="" class="offer__img" srcset="" />
     <p class="offer__new">درهم 449</p>
     <p class="offer__original">699 درهم</p>
   </div>
   <div class="offer__container">
     <h2 class="offer__title">الشعر المتوسط</h2>
-    <img src="images/prod-2-1000x-01.png" alt="" class="offer__img" srcset="" />
+    <img src="dist/images/prod-2-1000x-01.png" alt="" class="offer__img" srcset="" />
     <p class="offer__new">درهم 649</p>
     <p class="offer__original">899 درهم</p>
   </div>
   <div class="offer__container">
     <h2 class="offer__title">الشعر الطويل</h2>
-    <img src="images/prod-3-1000x-01.png" alt="" class="offer__img" srcset="" />
+    <img src="dist/images/prod-3-1000x-01.png" alt="" class="offer__img" srcset="" />
     <p class="offer__new">درهم 849</p>
     <p class="offer__original">1349 درهم</p>
   </div>
@@ -256,7 +257,7 @@
     <p class="buy-now__title-sub">نعم شعرك وعزز ثقتك بنفسك</p>
   </div>
 </section>
-<form action="#" class="form buy-now__form" id='buy-form'>
+<form method="post" action="#" class="form buy-now__form" id='buy-form'>
   <div class="u-mb-2">
     <h2 class="form__heading">
       معلوماتك
@@ -264,10 +265,10 @@
   </div>
 
   <div class="form__group">
-    <select id="offer-select" class="form__input">
-      <option value="1" selected>أريد عبوة واحدة (449 درهم)</option>
-      <option value="2">أريد 2 عبوات (649 درهم)</option>
-      <option value="3">أريد 3 عبوات (849 درهم)</option>
+    <select id="offer-select" class="form__input" name='ordertype'>
+      <option value="أريد عبوة واحدة (449 درهم)" selected>أريد عبوة واحدة (449 درهم)</option>
+      <option value="أريد 2 عبوات (649 درهم)">أريد 2 عبوات (649 درهم)</option>
+      <option value="أريد 3 عبوات (849 درهم)"  >أريد 3 عبوات (849 درهم)</option>
     </select>
     <div id="chevrons">
       <i class="fas fa-chevron-up"></i>
@@ -276,24 +277,24 @@
   </div>
 
   <div class="form__group">
-    <input type="text" class="form__input" placeholder="الاسم الكامل" id="name" required />
+    <input type="text" class="form__input" placeholder="الاسم الكامل" id="name" name='full-name' required />
     <label for="name" class="form__label">الاسم الكامل</label>
   </div>
   <div class="form__group">
-    <input type="text" class="form__input" placeholder="المدينة" id="city" required />
+    <input type="text" class="form__input" placeholder="المدينة" id="city" name='city' required />
     <label for="city" class="form__label">المدينة</label>
   </div>
   <div class="form__group">
-    <input type="phone" class="form__input" placeholder="رقم الهاتف" id="phone" required />
+    <input type="phone" class="form__input" placeholder="رقم الهاتف" id="phone" name='phone' required />
     <label for="phone" class="form__label">رقم الهاتف</label>
   </div>
   <div class="form__group">
-    <input type="phone" class="form__input" placeholder="تأكيد رقم الهاتف" id="phnoetrue" required />
+    <input type="phone" class="form__input" placeholder="تأكيد رقم الهاتف" id="phnoetrue" name='phone-check' required />
     <label for="phnoetrue" class="form__label">تأكيد رقم الهاتف</label>
   </div>
 
   <div class="form__group">
-    <a class="btn btn--gold" href="#buy-form">أطلب الآن</a>
+    <button type="submit" class="btn btn--gold"  name='submit'>أطلب الآن</button>
   </div>
 </form>
 <section class="section-service">
@@ -356,7 +357,7 @@
 </section>
 <div class="buy-now-sticky">
   <a href="#buy-form" class="btn btn--gold button-sticky">شراء الآن</a>
-  <a href="https://wa.me/212620226054?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D8%A8%D8%B1%D8%AF%20%D8%A7%D9%84%D8%AC%D9%88%20%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%88%D9%84" class="button-whatsapp button-sticky"><img src="images/icons8-whatsapp-64.png" class="button-whatsapp__img" /> الواتساب</a>
+  <a href="https://wa.me/212620226054?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D8%A8%D8%B1%D8%AF%20%D8%A7%D9%84%D8%AC%D9%88%20%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%88%D9%84" class="button-whatsapp button-sticky"><img src="dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" /> الواتساب</a>
 </div>
 <div class="<?php
 if (isset($_GET['order'])) {
@@ -382,7 +383,7 @@ if (isset($_GET['order'])) {
 					لقد تم تسجيل طلبكم سنتصل بك هاتفيا من أجل تأكيده
 					سنقوم بإرسال طلبكم إلى العنوان الذي قمت بتعبئتة <br>
 				</p>
-				<a class="button button-primary button-popup" href="./">استمر في التسوق</a>
+				<a class="btn btn--gold button-popup" href="./">استمر في التسوق</a>
 			</div>
 		</div>
 	</div>
@@ -396,7 +397,7 @@ if (isset($_GET['order'])) {
 
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/main.min.js"></script>
+<script src="dist/js/main.min.js"></script>
 
 <!-- onscroll animation library -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -429,7 +430,7 @@ if (isset($_GET['order'])) {
     $('.section-slider__responsive').slick({
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       touchMove: true,
       swipe: true,
       dots: true,
@@ -440,7 +441,7 @@ if (isset($_GET['order'])) {
     $('.reviews__responsive').slick({
       arrows: true,
       autoplay: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       touchMove: true,
       swipe: true,
       dots: true,
