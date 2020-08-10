@@ -1,3 +1,32 @@
+<div class="<?php
+if (isset($_GET['order'])) {
+    echo 'popup';
+}?> " id="popup">
+		<div class="popup__content <?php
+if (isset($_GET['order'])) {
+    echo 'show-content';
+}?>">
+			<div class="popup__right">
+			<?php if (isset($_GET['order'])) { echo "<script> fbq('track', 'Purchase');</script>";}?> 
+				<a href="./" class="popup__close">&times;</a>
+				<div class="success-checkmark">
+					<div class="check-icon">
+						<span class="icon-line line-tip"></span>
+						<span class="icon-line line-long"></span>
+						<div class="icon-circle"></div>
+						<div class="icon-fix"></div>
+					</div>
+				</div>
+				<h3 class="heading-tertiary">شكرا جزيلاً على ثقتكم</h3>
+				<p class="popup__text">
+					لقد تم تسجيل طلبكم سنتصل بك هاتفيا من أجل تأكيده
+					سنقوم بإرسال طلبكم إلى العنوان الذي قمت بتعبئتة <br>
+				</p>
+				<a class="button button-primary button-popup" href="./">استمر في التسوق</a>
+			</div>
+		</div>
+	</div>
+
 <!-- <script src="js/jquery.min.js"></script> -->
 <script src="https://kit.fontawesome.com/ecadb3d96a.js" crossorigin="anonymous"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->

@@ -36,29 +36,26 @@
         font-size: 1.5rem;
         font-weight: 300;
         position: absolute;
-        left: 19rem;
-        top: 1.5rem;
-        @include responsive(tab-port){
-            @include abs_centeringX;
-            width: 100%;
-            text-align: center;
-        }
+        // left: 19rem;
+        // top: 1.5rem;
+        @include abs_centeringX;
+        width: 100%;
+        text-align: center;
+       
     }
 
     &__title {
         color: $color-white;
         position: absolute;
-        right: 15%;
+        width: 100%;
+        text-align: center;
+        left: 50%;
+        right: unset;
         top: 20%;
+        transform: translateX(-50%);
+        // @include responsive(tab-port) {
 
-        @include responsive(tab-port) {
-            width: 100%;
-            text-align: center;
-            left: 50%;
-            right: unset;
-            top: 25%;
-            transform: translateX(-50%);
-        }
+        // }
 
         &-main {
             &--first {
