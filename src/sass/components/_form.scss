@@ -63,7 +63,7 @@
     }
 
     &__input {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
         font-family: inherit;
         color: inherit;
         padding: 1.5rem 2rem;
@@ -75,7 +75,7 @@
         display: block;
         transition: all .3s;
         margin: 0 auto;
-
+        font-size: 600;
         @include responsive(tab-port) {
             width: 100%;
         }

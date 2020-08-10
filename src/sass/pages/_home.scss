@@ -52,6 +52,8 @@
             margin: 33rem 0 5rem 0;
         }
     }
+
+
 }
 
 .exclusive {
@@ -517,4 +519,41 @@
 		padding: .6rem 1.5rem;
 
 	}
+}
+
+
+.faq{
+    text-align: center;
+    &__container {
+        width: 50%;
+        margin: 0 auto;
+
+        @include responsive(tab-port) {
+            width: 70%;
+        }
+
+        @include responsive(phone) {
+            width: 80%;
+        }
+    }
+    &__question{
+        text-align: right;
+        margin-bottom: 1.5rem;
+        @include responsive(phone){
+            text-align: center;
+        }
+        &-title{
+            font-size: 3rem;
+            font-weight: 600;
+            background: $gold-bg;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+        &-answer{
+            font-size: 2rem;
+            font-weight: 400;
+            color: $form-black;
+        }
+    }
 }

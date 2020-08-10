@@ -73,7 +73,7 @@ let userref = () => {
         // 3. pass the file through css minifier
         // .pipe(gulpIf('*.css', cssnano()))
 
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('dist/'));
 }
  
 let jspublic = () => {
