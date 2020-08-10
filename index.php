@@ -266,9 +266,9 @@
 
   <div class="form__group">
     <select id="offer-select" class="form__input" name='ordertype'>
-      <option value="1" selected>أريد عبوة واحدة (449 درهم)</option>
-      <option value="2">أريد 2 عبوات (649 درهم)</option>
-      <option value="3">أريد 3 عبوات (849 درهم)</option>
+      <option value="أريد عبوة واحدة (449 درهم)" selected>أريد عبوة واحدة (449 درهم)</option>
+      <option value="أريد 2 عبوات (649 درهم)">أريد 2 عبوات (649 درهم)</option>
+      <option value="أريد 3 عبوات (849 درهم)"  >أريد 3 عبوات (849 درهم)</option>
     </select>
     <div id="chevrons">
       <i class="fas fa-chevron-up"></i>
@@ -430,7 +430,7 @@ if (isset($_GET['order'])) {
     $('.section-slider__responsive').slick({
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       touchMove: true,
       swipe: true,
       dots: true,
