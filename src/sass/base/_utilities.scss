@@ -101,7 +101,9 @@ a {
 .t-center{
     text-align: center;
 }
-
+.b-center{
+    margin: 0 auto !important;
+}
 #popup{
     direction: ltr;
 }

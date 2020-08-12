@@ -282,10 +282,11 @@
   </div>
 
   <div class="form__group">
-    <select id="offer-select" class="form__input" name='ordertype'>
-      <option value="أريد عبوة واحدة (449 درهم)" selected>أريد عبوة واحدة (449 درهم)</option>
-      <option value="أريد 2 عبوات (649 درهم)">أريد 2 عبوات (649 درهم)</option>
-      <option value="أريد 3 عبوات (849 درهم)"  >أريد 3 عبوات (849 درهم)</option>
+    <select id="offer-select"   class="form__input" name='ordertype' require>
+      <option value="0" selected disabled>إختر العرض الذي يناسب طول شعرك</option>
+      <option value="1">عبوة واحدة للشعر القصير 449 درهم</option>
+      <option value="2">2 عبوات للشعر المتوسط 649 درهم</option>
+      <option value="3">3 عبوات للشعر الطويل 849 درهم</option>
     </select>
     <div id="chevrons">
       <i class="fas fa-chevron-up"></i>
@@ -373,8 +374,8 @@
   <p class="footer__designer">DESIGNED BY <a href="https://github.com/Med-MG"><span>MED MOUIGUINA</span></a></p>
 </section>
 <div class="buy-now-sticky">
-  <a href="#buy-form" class="btn btn--gold button-sticky">شراء الآن</a>
-  <a href="https://wa.me/212620226054?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D8%A8%D8%B1%D8%AF%20%D8%A7%D9%84%D8%AC%D9%88%20%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%88%D9%84" class="button-whatsapp button-sticky"><img src="dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" /> الواتساب</a>
+  <a href="#buy-form" class="btn btn--gold button-sticky b-center">شراء الآن</a>
+  <a href="https://wa.me/212620226054?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D8%A8%D8%B1%D8%AF%20%D8%A7%D9%84%D8%AC%D9%88%20%D8%A7%D9%84%D9%85%D8%AD%D9%85%D9%88%D9%84" class="button-whatsapp button-sticky  hidden"><img src="dist/images/icons8-whatsapp-64.png" class="button-whatsapp__img" /> الواتساب</a>
 </div>
 <div class="<?php
 if (isset($_GET['order'])) {
