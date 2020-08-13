@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="dist/css/util.css">
     <!-- our own css -->
     <link rel="stylesheet" href="dist/css/styles.css" />
+  <!-- Global site tag (gtag.js) - Google Ads: 870115050 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-870115050"></script>
+  <?php showpixles() ?>
 
     <title>Bio hair</title>  
   </head>
