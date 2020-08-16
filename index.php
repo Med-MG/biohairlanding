@@ -192,7 +192,7 @@
   </div>
 </section>
 
-<section class="reviews">
+<section class="reviews display-none">
   <h1 class="heading-primary t-center">هـؤلاء جربوا الماسك المعجزة بأنفسهم</h1>
   <p class="subheading t-center">الشهادات</p>
   <div class="reviews__responsive u-mt-b">
