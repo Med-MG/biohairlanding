@@ -290,21 +290,21 @@
   <div class="form__group" style="padding: 0 3rem;font-size: 1.8rem">
               <h5 class="form__heading" style="font-size: 2.5rem;">إختر العرض الذي يناسب طول شعرك</h5>
               <div class="form__radio-group">
-                <input type="radio" class="form__radio-input" id="small" name="customRadio">
+                <input type="radio" class="form__radio-input" id="small" value="1" name="customRadio">
                 <label for="small" class="form__radio-label">
                     <span class="form__radio-button"></span>
                     1 للشعر القصير 449 درهم
                 </label>
               </div>
               <div class="form__radio-group">
-                <input type="radio" class="form__radio-input" id="larg" name="customRadio">
+                <input type="radio" class="form__radio-input" id="larg" value="2" name="customRadio">
                 <label for="larg" class="form__radio-label">
                     <span class="form__radio-button"></span>
                     2 للشعر المتوسط 649 درهم 
                 </label>
               </div>
               <div class="form__radio-group">
-                <input type="radio" class="form__radio-input" id="big" name="customRadio">
+                <input type="radio" class="form__radio-input" id="big" value="3" name="customRadio">
                 <label for="big" class="form__radio-label">
                     <span class="form__radio-button"></span>
                     3 للشعر الطويل 849 درهم
