@@ -28,16 +28,14 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- usefull utility classes -->
     <link rel="stylesheet" href="dist/css/util.css">
-    <!-- our own css -->
-    <link rel="stylesheet" href="dist/css/styles.css" />
-  <!-- Global site tag (gtag.js) - Google Ads: 870115050 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-870115050"></script>
-  <?php showpixles() ?>
 
-    <title>Bio hair</title>  
+  <?php showpixles()?>
+      <!-- our own css -->
+    <link rel="stylesheet" href="dist/css/styles.css" />
+    <title>Bio hair</title>
   </head>
   <body>
-  
+
 <header class="hero-header">
   <h2 class="hero-header__number">
     <span>تواصل معنا على الرقم</span>
@@ -130,7 +128,7 @@
 
 <section class="encouragement encouragement--result">
   <div class="encouragement__container">
-    <h1 class="heading-primary">تنائج رائعة</h1>
+    <h1 class="heading-primary">نتائج رائعة</h1>
     <p class="description-text">
       الماسك المعجزة مجرب و فعال لقد تمت تجربته على 200 شخص بنوعيات شعر مختلفة و
       لقد أثبت المنتج فعاليته الاستثنائية على جميع المشاركين بدون استثناء
@@ -277,12 +275,6 @@
   </div>
 </section>
 <form method="post" action="#" class="form buy-now__form" id='buy-form'>
-  <div class="u-mb-2">
-    <h2 class="form__heading">
-    أدخل معلوماتك
-    </h2>
-  </div>
-
   <!-- <div class="form__group">
     <select id="offer-select"   class="form__input" name='ordertype' require>
       <option value="0" selected disabled>إختر العرض الذي يناسب طول شعرك</option>
@@ -296,20 +288,35 @@
     </div>
   </div> -->
   <div class="form__group" style="padding: 0 3rem;font-size: 1.8rem;margin-top: 4rem;">
-              <h5 class="form__radio-title" style="font-size: 2.5rem;">إختر العرض الذي يناسب طول شعرك</h5>
-              <div class="custom-radio custom-control">
-                  <input type="radio" id="exampleCustomRadio" value="1" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="exampleCustomRadio">عبوة واحدة للشعر القصير 449 درهم</label>
+              <h5 class="form__heading" style="font-size: 2.5rem;">إختر العرض الذي يناسب طول شعرك</h5>
+              <div class="form__radio-group">
+                <input type="radio" class="form__radio-input" id="small" name="customRadio">
+                <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    1 عبوة واحدة للشعر المتوسط 449 درهم
+                </label>
               </div>
-              <div class="custom-radio custom-control">
-                  <input type="radio" id="exampleCustomRadio2" value="2" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="exampleCustomRadio2">2 عبوات للشعر المتوسط 649 درهم</label>
+              <div class="form__radio-group">
+                <input type="radio" class="form__radio-input" id="larg" name="customRadio">
+                <label for="larg" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    2 عبوات للشعر المتوسط 649 درهم 
+                </label>
               </div>
-              <div class="custom-radio custom-control">
-                  <input type="radio" id="exampleCustomRadio2" value="3" name="customRadio" class="custom-control-input">
-                  <label class="custom-control-label" for="exampleCustomRadio2">عبوات للشعر الطويل 849 درهم</label>
+              <div class="form__radio-group">
+                <input type="radio" class="form__radio-input" id="big" name="customRadio">
+                <label for="big" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    3 عبوات للشعر المتوسط 849 درهم
+                </label>
               </div>
     </div>
+
+  <div class="u-mb-2">
+    <h2 class="form__heading">
+    أدخل معلوماتك
+    </h2>
+  </div>
   <div class="form__group">
     <input type="text" class="form__input" placeholder="الاسم الكامل" id="name" name='full-name' required />
     <label for="name" class="form__label">الاسم الكامل</label>
@@ -331,6 +338,7 @@
     <button type="submit" class="btn btn--gold"  name='submit'>أطلب الآن</button>
   </div>
 </form>
+
 <section class="section-service">
   <div class="section-service__container">
     <ul class="section-service__list list-unstyled">
@@ -402,7 +410,7 @@ if (isset($_GET['order'])) {
     echo 'show-content';
 }?>">
 			<div class="popup__right">
-			<?php if (isset($_GET['order'])) { echo "<script> fbq('track', 'Purchase');</script>";}?> 
+			<?php if (isset($_GET['order'])) {echo "<script> fbq('track', 'Purchase');</script>";}?>
 				<a href="./" class="popup__close">&times;</a>
 				<div class="success-checkmark">
 					<div class="check-icon">
@@ -470,7 +478,7 @@ if (isset($_GET['order'])) {
       dots: true,
       infinite: false,
       speed: 300,
-    
+
     });
     $('.reviews__responsive').slick({
       arrows: true,
