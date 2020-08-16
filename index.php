@@ -293,21 +293,21 @@
                 <input type="radio" class="form__radio-input" id="small" name="customRadio">
                 <label for="small" class="form__radio-label">
                     <span class="form__radio-button"></span>
-                    1 عبوة واحدة  للشعر القصير 449 درهم
+                    1 للشعر القصير 449 درهم
                 </label>
               </div>
               <div class="form__radio-group">
                 <input type="radio" class="form__radio-input" id="larg" name="customRadio">
                 <label for="larg" class="form__radio-label">
                     <span class="form__radio-button"></span>
-                    2 عبوات للشعر المتوسط 649 درهم 
+                    2 للشعر المتوسط 649 درهم 
                 </label>
               </div>
               <div class="form__radio-group">
                 <input type="radio" class="form__radio-input" id="big" name="customRadio">
                 <label for="big" class="form__radio-label">
                     <span class="form__radio-button"></span>
-                    3 عبوات للشعر الطويل 849 درهم
+                    3 للشعر الطويل 849 درهم
                 </label>
               </div>
     </div>
