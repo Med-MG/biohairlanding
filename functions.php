@@ -16,16 +16,16 @@ if(isset($_POST['submit'])){
     $phone = trim($_POST['phone']);
     $fullName= trim($_POST['full-name']);
     $city= trim($_POST['city']);
-    if(!empty($_POST['ordertype'])){
-        if($_POST['ordertype'] == "1"){
+    if(!empty($_POST['customRadio'])){
+        if($_POST['customRadio'] == "1"){
             $price="449dh";
             $quantity="1"; 
         }
-        if($_POST['ordertype'] == "2"){
+        if($_POST['customRadio'] == "2"){
             $price="649dh";
             $quantity="2";
         }
-        if($_POST['ordertype'] == "3"){
+        if($_POST['customRadio'] == "3"){
             $price="849dh";
             $quantity="3";
         }
@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
 
 
 
-    $range = "biohair";
+    $range = "biohair!A1:D";
     $values = [
         [$inc, $fullName, $city, $phone, $quantity,$price],
     ];
@@ -89,8 +89,8 @@ function showpixles(){
     $spreadsheetId = "1VPDLAmNXI50q2PkGBG9bPdVhyl17q9ahDIQv2VFawEM";
 
     //getting the last inserted row id
-    $range = "biohair!T2:U";
-    $response = $service->spreadsheets_values->get($spreadsheetId,$range);
+    $rangepix = "biohair!T2:U";
+    $response = $service->spreadsheets_values->get($spreadsheetId,$rangepix);
     $values = $response->getValues();
     if (empty($values)) {
         print "No data found.\n";

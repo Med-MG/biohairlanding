@@ -58,7 +58,7 @@
   <form action="#" class="form display-none">
     <div class="u-mb-2">
       <h2 class="form__heading">
-        معلوماتك
+        أدخل معلوماتك
       </h2>
     </div>
 
@@ -73,7 +73,6 @@
         <i class="fas fa-chevron-down"></i>
       </div>
     </div>
-
     <div class="form__group">
       <input type="text" class="form__input" placeholder="الاسم الكامل" id="name" required />
       <label for="name" class="form__label">الاسم الكامل</label>
@@ -280,11 +279,11 @@
 <form method="post" action="#" class="form buy-now__form" id='buy-form'>
   <div class="u-mb-2">
     <h2 class="form__heading">
-      معلوماتك
+    أدخل معلوماتك
     </h2>
   </div>
 
-  <div class="form__group">
+  <!-- <div class="form__group">
     <select id="offer-select"   class="form__input" name='ordertype' require>
       <option value="0" selected disabled>إختر العرض الذي يناسب طول شعرك</option>
       <option value="1">عبوة واحدة للشعر القصير 449 درهم</option>
@@ -295,8 +294,22 @@
       <i class="fas fa-chevron-up"></i>
       <i class="fas fa-chevron-down"></i>
     </div>
-  </div>
-
+  </div> -->
+  <div class="form__group" style="padding: 0 3rem;font-size: 1.8rem;margin-top: 4rem;">
+              <h5 class="form__radio-title" style="font-size: 2.5rem;">إختر العرض الذي يناسب طول شعرك</h5>
+              <div class="custom-radio custom-control">
+                  <input type="radio" id="exampleCustomRadio" value="1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="exampleCustomRadio">عبوة واحدة للشعر القصير 449 درهم</label>
+              </div>
+              <div class="custom-radio custom-control">
+                  <input type="radio" id="exampleCustomRadio2" value="2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="exampleCustomRadio2">2 عبوات للشعر المتوسط 649 درهم</label>
+              </div>
+              <div class="custom-radio custom-control">
+                  <input type="radio" id="exampleCustomRadio2" value="3" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="exampleCustomRadio2">عبوات للشعر الطويل 849 درهم</label>
+              </div>
+    </div>
   <div class="form__group">
     <input type="text" class="form__input" placeholder="الاسم الكامل" id="name" name='full-name' required />
     <label for="name" class="form__label">الاسم الكامل</label>
