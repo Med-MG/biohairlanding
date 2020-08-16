@@ -287,7 +287,7 @@
       <i class="fas fa-chevron-down"></i>
     </div>
   </div> -->
-  <div class="form__group" style="padding: 0 3rem;font-size: 1.8rem;margin-top: 4rem;">
+  <div class="form__group" style="padding: 0 3rem;font-size: 1.8rem">
               <h5 class="form__heading" style="font-size: 2.5rem;">إختر العرض الذي يناسب طول شعرك</h5>
               <div class="form__radio-group">
                 <input type="radio" class="form__radio-input" id="small" name="customRadio">
