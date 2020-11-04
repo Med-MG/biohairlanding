@@ -293,21 +293,21 @@
                 <input type="radio" class="form__radio-input" id="small" value="1" name="customRadio">
                 <label for="small" class="form__radio-label">
                     <span class="form__radio-button"></span>
-                    1 للشعر القصير 449 درهم
+                    1 للشعر القصير 219 درهم
                 </label>
               </div>
               <div class="form__radio-group">
                 <input type="radio" class="form__radio-input" id="larg" value="2" name="customRadio">
                 <label for="larg" class="form__radio-label">
                     <span class="form__radio-button"></span>
-                    2 للشعر المتوسط 649 درهم 
+                    2 للشعر المتوسط 319 درهم 
                 </label>
               </div>
               <div class="form__radio-group">
                 <input type="radio" class="form__radio-input" id="big" value="3" name="customRadio">
                 <label for="big" class="form__radio-label">
                     <span class="form__radio-button"></span>
-                    3 للشعر الطويل 849 درهم
+                    3 للشعر الطويل 399 درهم
                 </label>
               </div>
     </div>

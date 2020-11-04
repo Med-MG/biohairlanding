@@ -18,15 +18,15 @@ if(isset($_POST['submit'])){
     $city= trim($_POST['city']);
     if(!empty($_POST['customRadio'])){
         if($_POST['customRadio'] == "1"){
-            $price="449dh";
+            $price="219dh";
             $quantity="1"; 
         }
         if($_POST['customRadio'] == "2"){
-            $price="649dh";
+            $price="319dh";
             $quantity="2";
         }
         if($_POST['customRadio'] == "3"){
-            $price="849dh";
+            $price="399dh";
             $quantity="3";
         }
     }else{
