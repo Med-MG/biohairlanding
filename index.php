@@ -248,20 +248,20 @@
   <div class="offer__container">
     <h2 class="offer__title">الشعر القصير</h2>
     <img src="dist/images/productx1200.png" alt="" class="offer__img" srcset="" />
-    <p class="offer__new">درهم 449</p>
-    <p class="offer__original">699 درهم</p>
+    <p class="offer__new">درهم 219</p>
+    <p class="offer__original">399 درهم</p>
   </div>
   <div class="offer__container">
     <h2 class="offer__title">الشعر المتوسط</h2>
     <img src="dist/images/prod-2-1000x-01.png" alt="" class="offer__img" srcset="" />
-    <p class="offer__new">درهم 649</p>
-    <p class="offer__original">899 درهم</p>
+    <p class="offer__new">درهم 319</p>
+    <p class="offer__original">699 درهم</p>
   </div>
   <div class="offer__container">
     <h2 class="offer__title">الشعر الطويل</h2>
     <img src="dist/images/prod-3-1000x-01.png" alt="" class="offer__img" srcset="" />
-    <p class="offer__new">درهم 849</p>
-    <p class="offer__original">1349 درهم</p>
+    <p class="offer__new">درهم 399</p>
+    <p class="offer__original">849 درهم</p>
   </div>
 </section>
 
